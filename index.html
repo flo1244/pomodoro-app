@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=, initial-scale=1.0">
+		<title>Pomodoro Timer</title>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+		<h1>Pomodoro Timer</h1>
+		<div class="clock">
+			<div class="mins">0</div>
+			<div>:</div>
+			<div class="secs">00</div>
+			<audio src="https://soundbible.com/mp3/service-bell_daniel_simion.mp3"></audio>
+			<svg class="progress-ring" height="120" width="120">
+				<circle class="progress-ring__circle"
+						stroke-width="8"
+						fill="transparent"
+						r="50"
+						cx="60"
+						cy="60"
+						/>
+			</svg>
+		</div>
+		
+		<div class="btn-group">
+			<button class="start">Start</button>
+			<button class="reset">Reset</button>
+			<button class="pause">Pause</button>
+		</div>
+		
+		<form action=".">
+			<label for="focusTime">Focus Time</label>
+			<input type="number" value="1" id="focusTime" />
+			<label for="breakTime">Break Time</label>
+			<input type="number" value="1" id="breakTime" />
+			<button type="submit">Save Settings</button>
+		</form>
+	<script src="settings.js"></script>	
+    <script src="script.js"></script>
+	<script src="progress.js"></script>
+    </body>
+</html>
